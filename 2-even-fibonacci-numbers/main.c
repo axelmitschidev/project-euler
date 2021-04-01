@@ -13,7 +13,7 @@ int main(void)
 		printf("%d\n", number);
 		firstNumber = secondNumber;
 		secondNumber = number;
-		sum += number;
+		if (number % 2 == 0) sum += number;
 	}
 	printf("\nsum = %d\n", sum);
 	return 0;
